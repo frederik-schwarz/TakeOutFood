@@ -1,33 +1,25 @@
-import React, { useEffect } from 'react'
-// import { connect } from 'react-redux'
+import React, { useEffect, useState } from 'react'
+import { connect } from 'react-redux'
+import {Route} from 'react-router-dom'
 
-// import { fetchFruits } from '../actions'
+import { setAllItems } from '../actions.js/menuActions'
 
-//the todo and Thomes has good examples of components on github
+import Menu from './Menu'
+import Nav from './Nav'
 
 
-function App (props) {
-//   useEffect(() => {
-//     props.dispatch(fetchFruits())
-//   }, [])
+function App ({dispatch}) {
+  useEffect(() => {
+    dispatch(setAllItems())
+  }, [])
 
-//   return (
-//     <>
-//       <div className='app'>
-//         <h1>Fullstack Boilerplate - with Fruits!</h1>
-//         <ul>
-//           {props.fruits.map(fruit => (
-//             <li key={fruit}>{fruit}</li>
-//           ))}
-//         </ul>
-//       </div>
-//     </>
-//   )
+  return (
+    <>
+      <Route path='/' component={Nav}/>
+      <Route exact path='/Menu' component={Menu}/>
+    </>
+  )
 }
-// const mapStateToProps = (globalState) => {
-//   return {
-//     fruits: globalState.fruits
-//   }
-// }
 
-export default (App)
+
+export default connect()(App)

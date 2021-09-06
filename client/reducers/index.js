@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import changeName from './changeName'
+import menuReducer from './menuReducer'
 
 export default combineReducers({
-  changeName
+  menuReducer
 })
 
 //exports all the reducers from this file

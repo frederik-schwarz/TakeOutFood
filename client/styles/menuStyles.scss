@@ -1,0 +1,53 @@
+.MenuUl {
+    background-color: red;
+    display: flex; 
+    justify-content: center;
+    padding: 0px;
+}
+.MenuLi {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 17rem;
+    padding: 2rem;
+    margin: 1rem;
+    
+}
+.MenuLi img {
+    height: auto;
+    width: 17rem;
+}
+.allItemsName {
+    align-self: flex-start;
+    font-size: 2rem;
+    margin: 0rem 0rem 1rem 0rem;
+}
+.MenuDiv {
+    background-color: yellow;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.allItemsDietary {
+    background-color: #17D123;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border-radius: 50%;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+    display: inline-block;
+}
+.MenuDivChildNormal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 17rem;
+    align-items: flex-start;
+}
+.allItemsDescription {
+    align-self: flex-start;
+}
