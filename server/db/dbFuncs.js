@@ -38,6 +38,37 @@ const deleteLocation = (id, db = connection)=> {
     .where('id', id)
     .delete()
 }
+const updateSalesItems = (id, item, db = connection) => {
+    return db('forSale')
+    .where('id', id)
+    .update(item)
+}
+const updateLocations = (id, item, db = connection) => {
+    return db('locations')
+    .where('id', id)
+    .update(item)
+}
+const addItemBasket = (item, db = connection) => {
+    return db('basket')
+    .insert(item)
+    .catch(err => {
+        err.message
+    })
+}
+const addItemToMenu = (item, db = connection) => {
+    return db('forSale')
+    .insert(item)
+    .catch(err => {
+        err.message
+    })
+}
+const addLocations = (item, db = connection) => {
+    return db('locations')
+    .insert(item)
+    .catch(err => {
+        err.message
+    })
+}
 
 module.exports = {
  getAllItems,
@@ -46,4 +77,10 @@ module.exports = {
  getAllItemsBasket,
  deleteBasketItem,
  deleteLocation,
+ updateSalesItems,
+ updateLocations,
+ addLocations,
+ addItemToMenu,
+ addItemBasket,
+ 
 }

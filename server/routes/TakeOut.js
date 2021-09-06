@@ -43,6 +43,39 @@ router.delete('/locations/:id', (req, res) => {
         res.json(item)
     })
 })
+router.patch('/:id', (req,res) => {
+    db.updateSalesItems(req.params.id, req.body)
+    .then(item => {
+        res.json(item)
+    })
+})
+router.patch('/locations/:id', (req,res) => {
+    db.updateLocations(req.params.id, req.body)
+    .then(item => {
+        res.json(item)
+    })
+})
+router.post('/basket', (req,res) => {
+    console.log(req.body)
+    db.AddItemToBasket(req.body)
+    .then(item => {
+        res.json(item)
+    })
+})
+router.post('/', (req,res) => {
+    console.log(req.body)
+    db.AddListingBasket(req.body)
+    .then(item => {
+        res.json(item)
+    })
+})
+router.post('/locations', (req,res) => {
+    console.log(req.body)
+    db.AddListingBasket(req.body)
+    .then(item => {
+        res.json(item)
+    })
+})
 //write your get post patch del and other routes here 
 
 module.exports = router
