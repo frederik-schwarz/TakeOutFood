@@ -47,6 +47,9 @@ const updateLocations = (id, item, db = connection) => {
     return db('locations')
     .where('id', id)
     .update(item)
+    .catch(err => {
+        err.message
+    })
 }
 const addItemBasket = (item, db = connection) => {
     return db('basket')
