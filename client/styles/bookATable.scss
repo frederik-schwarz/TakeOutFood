@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.guestsDivParent {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    height: 70vh;
+}
+.guestsDivParent form {
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.TimeDivParent {
+    height: 70%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.guestsLabel {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+.guestsInput {
+    height: 2rem;
+    padding: 0px;
+    margin: 0px;
+    font-size: 2rem;
+    background-color: transparent;
+    border-width: 0px;
+    width: 5rem;
+    text-align: center;
+    -webkit-appearance: none;
+    
+}
+.timeInput {
+    height: 2rem;
+    padding: 0px;
+    margin: 0rem 0rem 0.7rem 0rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border-width: 0px;
+    width: 5rem;
+    text-align: center;
+    -webkit-appearance: none;
+}
+.ButtonGuests {
+    background-color: transparent;
+    border-width: 0px;
+    font-size: 1.7rem;
+    align-self: center;
+    padding: 0rem 2rem 1rem 0rem;
+    font-family: 'Bebas Neue', cursive;
+}
+.spanContainer {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.spanTimeContainer {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.guestsForm{
+    margin-bottom: 2rem 2rem 0rem 2rem;
+}
+.guestsInput:focus, textarea:focus, select:focus{
+    outline: none;
+    -webkit-appearance: none;
+}
+.timeInput:focus, textarea:focus, select:focus{
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.selectMenu {
+    width: 3rem;
+
+}

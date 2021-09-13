@@ -12,6 +12,9 @@ import MenuNav from './MenuNav'
 import SharePlates from './SharePlates'
 import Mains from './Mains'
 import Bookings from './BookComponent/Bookings'
+import BookCustomer from './BookComponent/BookCustomer'
+
+
 
 
 
@@ -31,6 +34,7 @@ function App ({dispatch}) {
       <Route exact path='/Menu/mains' component={Mains}/>
       <Route exact path='/Menu/share' component={SharePlates}/>
       <Route exact path='/bookings' component={Bookings}/>
+      <Route exact path='/bookings/customer' component={BookCustomer}/>
 
       </div>
     </>

@@ -7,7 +7,7 @@ exports.up = function(knex) {
         table.integer('booked')
         table.string('name')
         table.string('time')
-        table.string('number')
+        table.integer('number')
     })
 };
 

@@ -12,6 +12,6 @@ export function getAllTables () {
 export function updateT(id, newTable) {
     return request
     .patch(rootUrl + '/bookings/' + id)
-    .send({newTable})
+    .send(newTable)
     .then(res => res.body)
 }

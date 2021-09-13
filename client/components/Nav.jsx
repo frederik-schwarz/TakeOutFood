@@ -6,7 +6,7 @@ function Nav({history}) {
         <ul>
             <li onClick={() => history.push('/')}>Home</li>
             <li onClick={() => history.push('/Menu')}>Order Online</li>
-            <li onClick={() => history.push('/bookings')}>Bookings</li>
+            <li onClick={() => history.push('/bookings/customer')}>Bookings</li>
         </ul>
     )
   
