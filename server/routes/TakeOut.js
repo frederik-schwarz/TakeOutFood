@@ -59,6 +59,7 @@ router.post('/basket', (req,res) => {
     console.log(req.body)
     db.AddItemToBasket(req.body)
     .then(item => {
+        
         res.json(item)
     })
 })
