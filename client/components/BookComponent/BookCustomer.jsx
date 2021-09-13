@@ -7,6 +7,7 @@ import UpdateBookings from './UpdateBookings'
 
 function BookCustomer({items, history}) {
 const [open, changeOpen] = useState(false)
+const [open2, changeOpen2] = useState(true)
 // let today = new Date()
 
 // let hours = today.getHours() + 1
@@ -28,9 +29,8 @@ const[formData, setFormData] = useState({
     }
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(formData)
         changeOpen(!open)
-
+        changeOpen2(!open2)
     }
  return (
      <>
@@ -40,7 +40,9 @@ const[formData, setFormData] = useState({
          <label className='guestsLabel' htmlFor="booked">Guests:</label>
          <input className='guestsInput' type='number' name="booked" id="booked" onChange={handleChange} value={formData.booked} /><br />
         </span>
-         <button className='ButtonGuests'>Next</button>
+        <span className='buttonGuestsParent'>
+        {!!open2 &&<button className='ButtonGuests'>Next</button>}
+        </span> 
         </form>
         {!!open &&<BookCustomerTime table={formData}/>}
         </div>

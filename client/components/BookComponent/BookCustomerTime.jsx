@@ -45,8 +45,8 @@ function BookCustomerTime({dispatch, table, items, history}) {
     }
  return (
      <>
-     <div className='TimeDivParent'>
-        <form onSubmit={handleSubmit}>
+     
+        <form className='TimeDivParent' onSubmit={handleSubmit}>
         <span className='spanTimeContainer'>
         <label className='guestsLabel' htmlFor="time">Choose a time:</label>
             <select className='select-Menu' id="time" name="time" onChange={handleChange} value={data.time} >
@@ -55,15 +55,19 @@ function BookCustomerTime({dispatch, table, items, history}) {
                 <option className='selectedItems' value='8:30'>8:30</option>
                 <option className='selectedItems' value='8:45'>8:45</option>
             </select>
+            </span>
+            <span className='spanTimeContainer'>
             <label className='guestsLabel' htmlFor="name">Full Name:</label>
             <input className='timeInput' type='text' name="name" id="name" onChange={handleChange} value={data.name} /><br />
+            </span>
+            <span className='spanTimeContainer'>
             <label className='guestsLabel' htmlFor="number">Contact Number:</label>
             <input className='timeInput' type='number' name="number" id="number" onChange={handleChange} value={data.number} /><br />
             </span>
             <button type='submit'>Book now!</button>
         </form>
         {!!full &&<span>We are fully booked sorry!</span>}
-        </div>
+        
 
 
         
