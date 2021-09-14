@@ -13,6 +13,8 @@ import SharePlates from './SharePlates'
 import Mains from './Mains'
 import Bookings from './BookComponent/Bookings'
 import BookCustomer from './BookComponent/BookCustomer'
+import RightAd from './BookComponent/RightAd'
+import LeftAd from './BookComponent/LeftAd'
 
 
 
@@ -33,9 +35,10 @@ function App ({dispatch}) {
       <Route exact path='/Menu/starters' component={Starters}/>
       <Route exact path='/Menu/mains' component={Mains}/>
       <Route exact path='/Menu/share' component={SharePlates}/>
+      <Route path='/bookings' component={LeftAd}/>
       <Route exact path='/bookings' component={Bookings}/>
       <Route exact path='/bookings/customer' component={BookCustomer}/>
-
+      <Route path='/bookings' component={RightAd}></Route>
       </div>
     </>
   )

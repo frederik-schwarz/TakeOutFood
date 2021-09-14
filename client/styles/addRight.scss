@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.rigthAddiv{
+    display: inline-flex;
+    width: 25%;
+    border-radius: 1rem;
+    background-image: linear-gradient(to bottom right, white, white);
+    margin: 1rem 1rem 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.rightAdImg {
+    width: auto;
+    height: 10rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+}
+.rightAdQuotes {
+ font-family: 'Bebas Neue', cursive;
+ font-size: 1.4rem;
+ color: black;
+}
+.rightAdImgAward {
+    width: 9rem;
+    height: auto;
+}
