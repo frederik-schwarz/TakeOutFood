@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 import { useSpring, animated } from 'react-spring'
 import UpdateBookings from './UpdateBookings'
 
- import BookCustomerTime from './BookCustomerTime'
+import BookCustomerTime from './BookCustomerTime'
+
 
 function BookCustomer({items, history}) {
 const [open, changeOpen] = useState(false)
@@ -35,6 +36,7 @@ const[formData, setFormData] = useState({
  return (
      <>
         <div className='guestsDivParent'>
+        <h2 className='BookTableheading'>Book a Table Now!</h2>
         <form className='guestsForm' onSubmit={handleSubmit}>
         <span className='spanContainer'>
          <label className='guestsLabel' htmlFor="booked">Guests:</label>
