@@ -64,7 +64,7 @@ function BookCustomerTime({dispatch, table, items, history}) {
             <label className='guestsLabel' htmlFor="number">Contact Number:</label>
             <input className='timeInput' type='number' name="number" id="number" onChange={handleChange} value={data.number} /><br />
             </span>
-            <button type='submit'>Book now!</button>
+            <button  className='bookButton' type='submit'>Book now!</button>
         </form>
         {!!full &&<span>We are fully booked sorry!</span>}
         
