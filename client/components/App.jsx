@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom'
 
 import { setAllItems } from '../actions.js/menuActions'
 import { setAllTables } from '../actions.js/tableActions'
+import { Notifications } from 'react-push-notification';
 
 import Menu from './Menu'
 import Nav from './Nav'
@@ -29,6 +30,7 @@ function App ({dispatch}) {
   return (
     <>
       <Route path='/' component={Nav}/>
+      <Notifications />
       <div className="appDivMenu">
       <Route path='/Menu' component={MenuNav}/>
       <Route exact path='/Menu' component={Menu}/>
